@@ -1,0 +1,29 @@
+{
+    "name": "KSLogger",
+    "version": "1.0.0",
+    "description": "A simple Logger Class based on a video from Tomasz Tarnowski",
+    "keywords": "logger, logging, trace, debug, error",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/JoachimKittelberger/KSLogger"
+    },
+    "authors":
+    [
+      {
+        "name": "Joachim Kittelberger",
+        "email": "info@kibesoft.de",
+        "url": "https://www.kibesoft.de",
+        "maintainer": true
+      }
+    ],
+    "export": {
+        "exclude": ["test/*"]
+    },
+    "license": "MIT",
+    "homepage": "https://www.kibesoft.de/KSLogger",
+    "dependencies": {
+    },
+    "frameworks": ["arduino", "espidf"],
+    "platforms": "*"
+  }
