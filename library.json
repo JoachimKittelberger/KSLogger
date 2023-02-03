@@ -21,7 +21,7 @@
         "exclude": ["test/*"]
     },
     "license": "MIT",
-    "homepage": "https://www.kibesoft.de/KSLogger",
+    "homepage": "https://www.kibesoft.de/KSLogger/",
     "dependencies": {
     },
     "frameworks": ["arduino", "espidf"],

@@ -1,6 +1,46 @@
-#ifndef _KSLOGGER_H
-#define _KSLOGGER_H
+/**
+ * @file KSLogger.h
+ * 
+ * @brief Header File for Library KSLogger
+ * 
+ * @details Provides functionality for logging in Arduino frameworks
+ *   based on a video from Tomasz Tarnowski
+ * 
+ * @see https://github.com/JoachimKittelberger/KSLogger
+ * 
+ * @author Joachim Kittelberger <jkittelberger@kibesoft.de>
+ * @date 03.02.2023
+ * @version 1.00
+ *
+ * @todo
+ *   - Add examples to library
+ *   - publish library to PlatformIO
+ * @bug
+ *   - First Bug??
+ */
 
+/**
+ * @copyright
+ * Copyright (C) 2022 - 2023, KibeSoft - Joachim Kittelberger, (https://www.kibesoft.de)
+ * All rights reserved
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#ifndef _KSLogger_H
+#define _KSLogger_H
+
+// set default log level
 #ifndef LOG_LEVEL
 #define LOG_LEVEL LOG_LEVEL_DEBUG
 #endif
@@ -195,7 +235,7 @@ const char *get_level_name(int level) {
 #define EMERGENCYF(f_, ...)
 #endif
 
-#endif
+#endif      // #ifndef _KSLogger_H
 
 
 
