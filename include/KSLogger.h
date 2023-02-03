@@ -87,7 +87,7 @@ const __FlashStringHelper *get_level_name(int level) {
     if (LOG_LEVEL <= level) {                                                  \
       Serial.print(F("["));                                                    \
       Serial.print(get_level_name(level));                                     \
-      Serial.printf_P(PSTR("]::[%s:%d]:"), __FILE__, __LINE__);                \
+      Serial.printf_P(PSTR("]::(%s:%d():"), __FILE__, __LINE__);                \
       Serial.printf_P(PSTR((f_)), __VA_ARGS__);                                \
       Serial.println();                                                        \
     }                                                                          \
@@ -97,7 +97,7 @@ const __FlashStringHelper *get_level_name(int level) {
     if (LOG_LEVEL <= level) {                                                  \
       Serial.print(F("["));                                                    \
       Serial.print(get_level_name(level));                                     \
-      Serial.printf_P(PSTR("]::[%s:%d]:"), __FILE__, __LINE__);                \
+      Serial.printf_P(PSTR("]::(%s:%d):"), __FILE__, __LINE__);                \
       Serial.println(F(msg));                                                  \
     }                                                                          \
   }
@@ -130,7 +130,7 @@ const char *get_level_name(int level) {
   {                                                                            \
     if (LOG_LEVEL <= level) {                                                  \
       printf("[%s]", get_level_name(level));                                   \
-      printf("::[%s:%d]:", __FILE__, __LINE__);                                \
+      printf("::(%s:%d):", __FILE__, __LINE__);                                \
       printf("%s\n", msg);                                                     \
     }                                                                          \
   }
@@ -139,7 +139,7 @@ const char *get_level_name(int level) {
   {                                                                            \
     if (LOG_LEVEL <= level) {                                                  \
       printf("[%s]", get_level_name(level));                                   \
-      printf("::[%s:%d]:", __FILE__, __LINE__);                                \
+      printf("::(%s:%d):", __FILE__, __LINE__);                                \
       printf(f_, __VA_ARGS__);                                                 \
       printf("\n");                                                            \
     }                                                                          \
